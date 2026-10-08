@@ -115,7 +115,7 @@
       thumbs.forEach(function (t) { t.setAttribute("aria-pressed", String(t === b)); });
       var img = $("#proto-shot");
       img.alt = b.getAttribute("data-alt");
-      swapImg(img, "assets/img/" + b.getAttribute("data-shot") + ".jpg");
+      swapImg(img, "../assets/img/" + b.getAttribute("data-shot") + ".jpg");
       $("#proto-url").textContent = b.getAttribute("data-url");
     });
   });
@@ -160,7 +160,7 @@
       li.classList.toggle("is-on", n < shown);
       li.classList.toggle("is-now", n === shown - 1);
     });
-    swapImg($("#model-shot"), "assets/img/" + m.shot + ".jpg");
+    swapImg($("#model-shot"), "../assets/img/" + m.shot + ".jpg");
     $("#model-url").textContent = m.url;
     $("#model-detail").innerHTML =
       '<p class="mdet__k">Step ' + (k + 1) + " of 6</p>" +
@@ -207,7 +207,7 @@
     world.setAttribute("aria-labelledby", "wt-" + b.id);
     world.innerHTML =
       '<div class="browser"><div class="browser__bar"><i></i><i></i><i></i><span class="browser__url">' + icon("globe") + esc(b.name) + "</span></div>" +
-      '<div class="browser__shot"><img src="assets/img/' + b.shot + '.jpg" width="1600" height="1000" alt="' + esc(b.name) + ', in the AI Lab prototype." /></div></div>' +
+      '<div class="browser__shot"><img src="../assets/img/' + b.shot + '.jpg" width="1600" height="1000" alt="' + esc(b.name) + ', in the AI Lab prototype." /></div></div>' +
       '<div class="card world__info"><span class="tag tag--built">' + icon(b.icon) + esc(b.interest) + "</span>" +
       "<h3>" + esc(b.name) + "</h3>" +
       '<dl class="world__facts"><div><dt>Science</dt><dd>' + esc(b.science) + "</dd></div><div><dt>Maths</dt><dd>" + esc(b.maths) + '</dd></div><div class="wide"><dt>Session 6 product</dt><dd>' + esc(b.product) + " " + esc(b.productNote) + "</dd></div></dl>" +

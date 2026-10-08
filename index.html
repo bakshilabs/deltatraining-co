@@ -3,243 +3,290 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Delta Learning · The AI Lab for schools</title>
-    <meta name="description" content="A six-session AI Lab where 10 to 11 year olds learn maths and science by building with AI: prompting step by step, predicting, testing and deciding. For schools and education partners." />
-    <meta name="theme-color" content="#f3efe7" />
+    <title>Delta Learning · AI fluency for children</title>
+    <meta name="description" content="The AI Lab: six one-hour sessions where children aged 10 to 11 learn maths and science by building with AI. Safe to use, runs offline, and built with schools." />
+    <meta name="theme-color" content="#fbfbf7" />
     <link rel="icon" href="assets/logo-mark.png" type="image/png" />
-    <link rel="preload" href="assets/fonts/grandstander-700-latin.woff2" as="font" type="font/woff2" crossorigin />
-    <link rel="preload" href="assets/fonts/inter.woff2" as="font" type="font/woff2" crossorigin />
-    <link rel="stylesheet" href="css/site.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..800;1,9..144,300..800&family=IBM+Plex+Mono:wght@400;500;600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/kids.css" />
     <script>document.documentElement.classList.add("js");</script>
   </head>
   <body>
-    <!-- ======================================================================
-         TOP BAR: brand, stage-style section nav, call to action
-         ====================================================================== -->
-    <header class="topbar" id="topbar">
-      <a class="logo" href="#top"><img src="assets/logo.png" width="1520" height="260" alt="Delta Learning" /></a>
-      <nav class="stagenav" aria-label="Sections">
-        <span class="stagenav__label">The AI Lab</span>
-        <ol>
-          <li><a href="#example">Example</a></li>
-          <li><a href="#model">Learning model</a></li>
-          <li><a href="#worlds">Builds</a></li>
-          <li><a href="#sessions">Sessions</a></li>
-          <li><a href="#train">Train</a></li>
-          <li><a href="#schools">Schools</a></li>
-          <li><a href="#partners">Partners</a></li>
-        </ol>
-      </nav>
-      <div style="display: flex; gap: 10px; align-items: center">
-        <a class="btn btn--ink btn--sm" href="#next">Book a call <span class="btn__arrow"><i data-icon="arrow-up-right"></i></span></a>
-        <button class="menubtn" id="menubtn" aria-label="Open menu" aria-expanded="false" aria-controls="menu"><i data-icon="grid"></i></button>
+    <!-- ====================================================================
+         NAV
+         ==================================================================== -->
+    <nav class="top" aria-label="Main">
+      <span class="progress" aria-hidden="true"></span>
+      <div class="wrap">
+        <a class="logo" href="#top"><img src="assets/logo.png" width="1520" height="260" alt="Delta Learning" /></a>
+        <div class="links">
+          <a href="#builds">Builds</a>
+          <a href="#safety">Safety</a>
+          <a href="#example">Example</a>
+          <a href="#lessons">Lessons</a>
+          <a href="#training">Training</a>
+          <a href="#partners">Partners</a>
+          <a href="#faq">FAQ</a>
+        </div>
+        <a class="btn btn-teal" href="#next">Book a call <span class="arr"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6" /></svg></span></a>
       </div>
-    </header>
-    <nav class="menu" id="menu" aria-label="Menu">
-      <a href="#example">Example <span>01</span></a>
-      <a href="#model">Learning model <span>02</span></a>
-      <a href="#worlds">Builds <span>03</span></a>
-      <a href="#sessions">Sessions <span>04</span></a>
-      <a href="#train">Train <span>05</span></a>
-      <a href="#schools">Schools <span>06</span></a>
-      <a href="#partners">Partners <span>07</span></a>
-      <a href="#get">What you get <span>08</span></a>
-      <a href="#faq">Questions <span>09</span></a>
-      <a class="btn" href="#next">Book a 20-minute call <span class="btn__arrow"><i data-icon="arrow-up-right"></i></span></a>
     </nav>
 
     <main id="top">
-      <!-- ====================================================================
-           1 · HERO
-           ==================================================================== -->
-      <section class="hero" data-sec>
-        <svg class="ribbon" viewBox="0 0 800 1000" preserveAspectRatio="none" aria-hidden="true">
-          <path d="M700 -40 C 420 160, 300 300, 420 520 S 760 820, 560 1080" />
-          <path class="ribbon__dash" d="M700 -40 C 420 160, 300 300, 420 520 S 760 820, 560 1080" />
-        </svg>
+      <!-- ==================================================================
+           HERO
+           ================================================================== -->
+      <header class="hero">
+        <div class="hero-photo">
+          <svg class="tri" style="left: 47%; top: 18%; width: 22px" viewBox="0 0 20 18" aria-hidden="true"><path d="M10 0 20 18H0Z" fill="#ffc53d" /></svg>
+          <svg class="tri" style="left: 4%; bottom: 14%; width: 16px; rotate: -18deg" viewBox="0 0 20 18" aria-hidden="true"><path d="M10 0 20 18H0Z" fill="#0e9c8e" /></svg>
+          <span class="tag t1"><i></i>Runs offline</span>
+          <span class="tag t2"><i></i>About 15 per class</span>
+          <span class="tag t3"><i></i>No account to create</span>
+          <div class="wrap hero-copy">
+              <div>
+                <p class="label">AI learning for children · Ages 10 to 11</p>
+                <h1>AI fluency for children, preparing them for the <em>future</em>.</h1>
+                <p class="lead">Children learn maths and science by building with AI: prompting step by step, predicting, testing and deciding. Six one-hour sessions, one build that grows, and a finished product to share.</p>
+                <div class="ctas">
+                  <a class="btn btn-teal" href="#next">Book a 20-minute call <span class="arr"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6" /></svg></span></a>
+                  <a class="btn btn-line" href="#lessons">See how it works <span class="arr"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6" /></svg></span></a>
+                </div>
+              </div>
+          </div>
+        </div>
 
-        <div class="wrap hero__grid">
-          <div class="hero__copy">
-            <p class="eyebrow" data-a><i data-icon="sparkle"></i>AI learning for children aged 10 to 11</p>
-            <h1 class="t-hero" data-a style="--d: 100ms">AI fluency for children, <span class="teal">preparing them for the future.</span></h1>
-            <ul class="pillars">
-              <li data-a style="--d: 200ms"><span class="tile tile--tint"><i data-icon="eye"></i></span><div><h3>Understanding AI</h3><p>Children see what the AI understood and what it had to guess.</p></div></li>
-              <li data-a style="--d: 260ms"><span class="tile tile--yellow"><i data-icon="hand"></i></span><div><h3>Human judgement</h3><p>Every choice plays out on screen, so cause and effect is visible.</p></div></li>
-              <li data-a style="--d: 320ms"><span class="tile tile--pink"><i data-icon="shield-check"></i></span><div><h3>Safe to use</h3><p>There is no open AI model, no chat and no account to create. It runs offline.</p></div></li>
-              <li data-a style="--d: 380ms"><span class="tile tile--orange"><i data-icon="repeat"></i></span><div><h3>Lasting habits</h3><p>They build habits they will need as AI becomes part of everyday life.</p></div></li>
-            </ul>
-            <div class="btns" data-a style="--d: 440ms">
-              <a class="btn" href="#next">Book a 20-minute call <span class="btn__arrow"><i data-icon="arrow-up-right"></i></span></a>
-              <a class="btn btn--ghost" href="#example">See our current work <span class="btn__arrow"><i data-icon="arrow-down"></i></span></a>
-            </div>
+        <div class="wrap">
+          <div class="badges">
+            <span class="badge"><b style="background: var(--mint-t)"><i data-icon="eye"></i></b>Understanding AI</span>
+            <span class="badge"><b style="background: var(--sun-t)"><i data-icon="hand"></i></b>Human judgement</span>
+            <span class="badge"><b style="background: var(--accent-t)"><i data-icon="shield-check"></i></b>Safe to use</span>
+            <span class="badge"><b style="background: var(--sky-t)"><i data-icon="repeat"></i></b>Lasting habits</span>
+            <span class="badge"><b style="background: var(--mint-t)"><i data-icon="board"></i></b>Ready-to-run lessons</span>
           </div>
 
-          <div class="hero__art" aria-hidden="true">
-            <svg class="orbit" viewBox="0 0 640 640">
-              <g class="orbit__spin"><circle class="orbit__dash" cx="320" cy="320" r="196" /></g>
-              <ellipse class="orbit__ring" cx="320" cy="320" rx="290" ry="118" transform="rotate(-12 320 320)" />
-            </svg>
-            <span class="planet planet--pink" style="left: 82%; top: 27%; width: 13%; height: 13%"></span>
-            <span class="planet planet--earth" style="left: 76%; top: 64%; width: 15%; height: 15%"></span>
-            <span class="planet planet--orange" style="left: 16%; top: 62%; width: 8%; height: 8%"></span>
-            <span class="orbit-label" style="left: 9%; top: 47%">Space</span>
-            <span class="orbit-label" style="left: 34%; top: 32%">Sport</span>
-            <span class="orbit-label" style="left: 62%; top: 66%">Music</span>
-            <span class="orbit-label" style="left: 92%; top: 44%">Planet</span>
-            <span class="bit bit--float" data-bit="teal:happy:200:-6" style="left: 34%; top: 32%"></span>
-            <span class="bit bit--float bit--slow" data-bit="pink:grin:96:12" style="left: 52%; top: 70%"></span>
+          <!-- The unit, as a ticket -->
+          <div class="ticket">
+            <span class="notch top"></span><span class="notch bot"></span>
+            <div class="stub">
+              <p class="label">An example unit</p>
+              <h3>Six sessions, one build that <em>grows</em></h3>
+              <p>Run it as a half-term block or as six weekly one-hour sessions, for around 15 children. Each child keeps the build they chose, and each session adds one prompting skill.</p>
+              <a class="btn btn-teal" href="#next">Book a 20-minute call <span class="arr"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6" /></svg></span></a>
+            </div>
+            <ul class="nights-list">
+              <li class="nl-head">
+                <span></span>
+                <span class="cap">One prompting skill each session</span>
+                <span class="tm"><i>Ingredients<small>in the prompt</small></i><i>AI guesses<small>to spot</small></i></span>
+              </li>
+              <li><span class="d" style="background: var(--mint-t)"><small>S</small>1</span><div><b>Say what you want</b><span>Find what the AI guessed</span></div><span class="tm"><i>1 of 6</i><i>4 guesses</i></span></li>
+              <li><span class="d" style="background: var(--sun-t)"><small>S</small>2</span><div><b>Add details</b><span>Make the build your own</span></div><span class="tm"><i>2 of 6</i><i>3 guesses</i></span></li>
+              <li><span class="d" style="background: var(--sky-t)"><small>S</small>3</span><div><b>Add numbers</b><span>Predict the result, then test it</span></div><span class="tm"><i>3 of 6</i><i>2 guesses</i></span></li>
+              <li><span class="d" style="background: var(--accent-t)"><small>S</small>4</span><div><b>Set a goal and limits</b><span>Check the AI for mistakes</span></div><span class="tm"><i>4 of 6</i><i>1 guess</i></span></li>
+              <li><span class="d" style="background: var(--mint-t)"><small>S</small>5</span><div><b>Test and explain</b><span>Choose using the evidence</span></div><span class="tm"><i>5 of 6</i><i class="none">None</i></span></li>
+              <li><span class="d" style="background: var(--navy); color: #fff"><small style="color: var(--mint)">S</small>6</span><div><b>Finish, share and present</b><span>Present a finished product to the class</span></div><span class="tm"><i>6 of 6</i><i class="none">None</i></span></li>
+            </ul>
+          </div>
+        </div>
+      </header>
 
-            <div class="card hero__ask" data-a="pop" style="--d: 700ms; --r: -2deg">
-              <p class="minilabel"><i data-icon="wand"></i>Planet Builder · first prompt</p>
-              <p class="q">“Make a planet”</p>
-              <div class="hero__chips">
-                <span class="mini mini--you"><i data-icon="user"></i>a planet <small>your words</small></span>
-                <span class="mini mini--guess"><i data-icon="help"></i>Earth-like gravity <small>AI guessed</small></span>
+      <!-- ==================================================================
+           BUILDS (level map)
+           ================================================================== -->
+      <section class="section" id="builds">
+        <div class="wrap">
+          <div class="sec-head">
+            <p class="label">The four builds</p>
+            <h2>Children learn the same skills in different <em>builds</em>.</h2>
+            <p>Each child picks a build that interests them, and the whole class learns the same skill at the same time. In every build, the AI gets something wrong on purpose, so children learn to catch it.</p>
+          </div>
+          <div class="map">
+            <svg class="map-path" viewBox="0 0 1000 120" preserveAspectRatio="none" aria-hidden="true"><defs><mask id="map-draw" maskUnits="userSpaceOnUse" x="0" y="0" width="1000" height="120"><path class="draw" pathLength="1" d="M60 40 C 170 40, 200 100, 300 100 S 430 30, 540 40 S 690 110, 790 100 S 930 30, 990 30" fill="none" stroke="#fff" stroke-width="12" /></mask></defs><path mask="url(#map-draw)" d="M60 40 C 170 40, 200 100, 300 100 S 430 30, 540 40 S 690 110, 790 100 S 930 30, 990 30" fill="none" stroke="#6fe0c6" stroke-width="3" stroke-dasharray="2 10" stroke-linecap="round" /></svg>
+            <div class="stop">
+              <div class="pin"><img src="img/robot-space.png" width="400" height="400" alt="" loading="lazy" /></div>
+              <div class="pain" style="--c: var(--teal)"><p class="n">Space</p><h3>Planet Builder</h3><p>Gravity and forces, halving and doubling. Children finish with a Planet Passport for the planet they built.</p><p class="mistake"><small>The AI's mistake</small>“As high as possible” sets gravity to zero, so the astronaut floats away.</p></div>
+            </div>
+            <div class="stop">
+              <div class="pin"><img src="img/robot-sport.png" width="400" height="400" alt="" loading="lazy" /></div>
+              <div class="pain" style="--c: var(--accent)"><p class="n">Sport</p><h3>Kick Lab</h3><p>Forces and angles. Children finish with a Free-Kick Challenge that friends can try.</p><p class="mistake"><small>The AI's mistake</small>It reads “high” as a 70° kick, and the ball lands short of the goal.</p></div>
+            </div>
+            <div class="stop">
+              <div class="pin"><img src="img/robot-music.png" width="400" height="400" alt="" loading="lazy" /></div>
+              <div class="pain" style="--c: #c98f00"><p class="n">Music</p><h3>Beat Lab</h3><p>Sound and pitch, fractions and beats per minute. Children finish with a named track of their own.</p><p class="mistake"><small>The AI's mistake</small>“Make the melody higher” comes out louder, not higher in pitch.</p></div>
+            </div>
+            <div class="stop">
+              <div class="pin"><img src="img/robot-planet.png" width="400" height="400" alt="" loading="lazy" /></div>
+              <div class="pain" style="--c: var(--teal-dark)"><p class="n">The planet</p><h3>Power Town</h3><p>Energy, percentages and line graphs. Children finish with a Town Energy Plan that keeps the lights on.</p><p class="mistake"><small>The AI's mistake</small>“Clean energy” means solar only, so the town loses power at night.</p></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==================================================================
+           SAFETY
+           ================================================================== -->
+      <section class="section deep" id="safety">
+        <div class="wrap">
+          <div class="safety-top">
+            <div class="sec-head">
+              <p class="label">Safety</p>
+              <h2>Safe to use, <em>by design</em>.</h2>
+              <p>There is no open AI model, no chat and no account to create. The AI Lab runs offline on the device, with an instructor in the room for every lesson.</p>
+            </div>
+            <div class="photo"><img src="img/teach.jpg" width="1600" height="1067" alt="An instructor kneels beside a pupil at a laptop, both smiling at the screen." /></div>
+          </div>
+          <div class="services">
+            <div class="svc" data-n="01"><span class="ic" style="--t: var(--mint-t)"><i data-icon="cpu"></i></span><div><b>No open AI model</b><span>Each build has its own example AI, so children only see answers designed for the lesson.</span></div></div>
+            <div class="svc" data-n="02"><span class="ic" style="--t: var(--sun-t)"><i data-icon="chat"></i></span><div><b>No chat</b><span>Children steer the build with prompts about the task, not open conversation.</span></div></div>
+            <div class="svc" data-n="03"><span class="ic" style="--t: var(--sky-t)"><i data-icon="account"></i></span><div><b>No account to create</b><span>Children never sign up for anything, and what they make stays on the device.</span></div></div>
+            <div class="svc" data-n="04"><span class="ic" style="--t: var(--accent-t)"><i data-icon="offline"></i></span><div><b>Runs offline</b><span>No internet is needed, so lessons run behind school firewalls.</span></div></div>
+            <div class="svc" data-n="05"><span class="ic" style="--t: var(--mint-t)"><i data-icon="shield-check"></i></span><div><b>Never bypasses school security</b><span>We help schools set it up on their own devices and networks, with your IT team.</span></div></div>
+            <div class="svc" data-n="06"><span class="ic" style="--t: var(--sun-t)"><i data-icon="board"></i></span><div><b>An instructor in the room</b><span>Trained instructors run every lesson, with prompts on screen at the right moment.</span></div></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==================================================================
+           EXAMPLE (diploma-style split)
+           ================================================================== -->
+      <section class="section" id="example">
+        <div class="wrap dip">
+          <div>
+            <p class="label">An example in progress</p>
+            <h2>An example of our current <em>work</em>.</h2>
+            <p class="body">Children pick prompt cards to tell the Lab Guide what to build. It shows what it understood and what it guessed. Then they test their ideas in 3D, see what changed and share what they made.</p>
+            <div class="facts">
+              <div class="fact"><b>4</b><span>places to build: energy, water, food and space</span></div>
+              <div class="fact"><b>6</b><span>stages in each place, each with three prompt cards</span></div>
+              <div class="fact"><b>1</b><span>vague card at every stage, so the AI has to guess</span></div>
+              <div class="fact"><b>0</b><span>typing, open AI models or internet needed</span></div>
+            </div>
+            <p class="note">In development, and built to be changed with you.</p>
+          </div>
+          <div>
+            <div class="dip-art">
+              <div class="photo"><img id="app-shot" src="assets/img/app-places.jpg" width="1600" height="1000" alt="Choose a place: Eco Town, River Town, Grow Lab and Moon Base." /></div>
+              <div class="cert">
+                <svg class="seal" viewBox="0 0 100 100" aria-hidden="true"><path d="M50 6 96 88H4Z" fill="#0e9c8e" /><path d="M50 22 82 80H18Z" fill="#ffc53d" /><text x="50" y="70" text-anchor="middle" font-family="Fraunces, serif" font-style="italic" font-size="15" fill="#0c1b24">Vague</text></svg>
+                <p class="label">River Town · Stage 2</p>
+                <h4>“Add the usual things”</h4>
+                <span class="guess"><i data-icon="help"></i>AI guessed: a car park and wide roads</span>
+                <p>More tarmac means more rain runs straight into the river. The child spots the guess, then tries another card.</p>
               </div>
             </div>
-            <div class="note hero__say" data-a="pop" style="--d: 900ms">
-              <p class="minilabel">Instructor prompt</p>
-              “What did the AI guess? What do you predict will happen?”
-            </div>
-          </div>
-        </div>
-
-        <div class="ticker" data-ticker="Build it|Try it|Question it|Test it|Change it|Explain it"></div>
-      </section>
-
-      <!-- ====================================================================
-           2 · AN EXAMPLE OF OUR CURRENT WORK
-           ==================================================================== -->
-      <section class="section" id="example" data-sec>
-        <div class="wrap proto">
-          <div>
-            <p class="eyebrow" data-a><i data-icon="rocket"></i>An example in progress</p>
-            <h2 class="t-1" data-a style="--d: 80ms">An example of our current work.</h2>
-            <p class="lead" data-a style="--d: 160ms">Children pick prompt cards to tell the Lab Guide what to build. It shows what it understood and what it guessed. Then they test their ideas in 3D, see what changed and share what they made.</p>
-            <div class="stats">
-              <div class="stat" data-a style="--d: 220ms"><b data-count="4">4</b><p>places to build: energy, water, food and space</p></div>
-              <div class="stat" data-a style="--d: 280ms"><b data-count="6">6</b><p>stages in each place, each with three prompt cards</p></div>
-              <div class="stat stat--pink" data-a style="--d: 340ms"><b data-count="1">1</b><p>vague card at every stage, so the AI has to guess</p></div>
-              <div class="stat stat--ink" data-a style="--d: 400ms"><b>0</b><p>typing, open AI models or internet needed</p></div>
-            </div>
-          </div>
-
-          <div class="proto__view" data-a style="--d: 200ms">
-            <div class="note proto__sticker">Example<small>In development</small></div>
-            <div class="browser">
-              <div class="browser__bar"><i></i><i></i><i></i><span class="browser__url"><i data-icon="lock"></i><span id="proto-url">AI Lab · Choose a place</span></span></div>
-              <div class="browser__shot"><img id="proto-shot" src="assets/img/app-places.jpg" width="1600" height="1000" alt="Choose a place: Eco Town, River Town, Grow Lab and Moon Base." /></div>
-            </div>
-            <span class="bit bit--float" data-bit="teal:wink:96:-10"></span>
-            <div class="thumbs" id="thumbs" role="group" aria-label="Look around the app">
-              <button class="thumb" aria-pressed="true" data-shot="app-places" data-url="AI Lab · Choose a place" data-alt="Choose a place: Eco Town, River Town, Grow Lab and Moon Base."><img src="assets/img/app-places.jpg" alt="" loading="lazy" />Places</button>
-              <button class="thumb" aria-pressed="false" data-shot="app-first-card" data-url="AI Lab · Eco Town · Start your town" data-alt="Eco Town: the first prompt card."><img src="assets/img/app-first-card.jpg" alt="" loading="lazy" />Prompt</button>
-              <button class="thumb" aria-pressed="false" data-shot="app-crew" data-url="AI Lab · Eco Town · The crew builds it" data-alt="Eco Town: a crew builds what the card asked for."><img src="assets/img/app-crew.jpg" alt="" loading="lazy" />Build</button>
-              <button class="thumb" aria-pressed="false" data-shot="app-details" data-url="AI Lab · River Town · Fill in the village" data-alt="River Town: what the AI guessed, and why."><img src="assets/img/app-details.jpg" alt="" loading="lazy" />Guess</button>
-              <button class="thumb" aria-pressed="false" data-shot="app-test" data-url="AI Lab · Eco Town · Test it, and explain" data-alt="Eco Town: a fair test."><img src="assets/img/app-test.jpg" alt="" loading="lazy" />Test</button>
-              <button class="thumb" aria-pressed="false" data-shot="app-share" data-url="AI Lab · Moon Base · Finish and share" data-alt="Moon Base: finish and share."><img src="assets/img/app-share.jpg" alt="" loading="lazy" />Share</button>
-              <button class="thumb" aria-pressed="false" data-shot="app-map" data-url="AI Lab · Your prompt map" data-alt="The prompt map: every choice and what it led to."><img src="assets/img/app-map.jpg" alt="" loading="lazy" />Map</button>
+            <div class="thumbs" role="group" aria-label="Look around the app">
+              <button aria-pressed="true" data-shot="app-places" data-alt="Choose a place: Eco Town, River Town, Grow Lab and Moon Base.">Places</button>
+              <button aria-pressed="false" data-shot="app-first-card" data-alt="River Town: the AI explains what it added and why.">Prompt</button>
+              <button aria-pressed="false" data-shot="app-crew" data-alt="Eco Town: a crew builds what the card asked for.">Build</button>
+              <button aria-pressed="false" data-shot="app-details" data-alt="River Town: what the AI guessed, and why.">Guess</button>
+              <button aria-pressed="false" data-shot="app-test" data-alt="Eco Town: a fair test.">Test</button>
+              <button aria-pressed="false" data-shot="app-share" data-alt="Moon Base: finish and share.">Share</button>
+              <button aria-pressed="false" data-shot="app-map" data-alt="The prompt map: every choice and what it led to.">Map</button>
             </div>
           </div>
         </div>
       </section>
 
-      <!-- ====================================================================
-           3 · THE LEARNING MODEL
-           ==================================================================== -->
-      <section class="section" id="model" data-sec>
+      <!-- ==================================================================
+           PROJECTS
+           ================================================================== -->
+      <section class="section deep" id="projects">
         <div class="wrap">
-          <div class="head">
-            <p class="eyebrow" data-a><i data-icon="repeat"></i>The learning model</p>
-            <h2 class="t-1" data-a style="--d: 80ms">Lesson structure.</h2>
-            <p class="lead" data-a style="--d: 160ms">Every session has six steps. Children repeat the middle four, each time with a new prompt.</p>
-          </div>
-          <div class="steps" id="steps" data-a style="--d: 200ms"></div>
-          <div class="repeat" data-a style="--d: 260ms">
-            <svg class="loopline" viewBox="0 0 600 40" preserveAspectRatio="none" aria-hidden="true"><path d="M480 0 C 480 34, 420 36, 300 36 S 120 34, 120 0" /></svg>
-            <span class="chip chip--ai"><i data-icon="repeat"></i>Children repeat these four steps with a new version of the prompt.</span>
-          </div>
-          <div class="model" data-a style="--d: 300ms">
-            <div class="browser">
-              <div class="browser__bar"><i></i><i></i><i></i><span class="browser__url"><i data-icon="globe"></i><span id="model-url">AI Lab · Choose a build</span></span></div>
-              <div class="browser__shot"><img id="model-shot" src="assets/img/build-lab.jpg" width="1600" height="1000" alt="" /></div>
+          <div class="safety-top">
+            <div class="sec-head">
+              <p class="label">Session 6</p>
+              <h2>Every child finishes something they <em>made</em>.</h2>
+              <p>Each child finishes their product and presents it to the class. They explain what they asked for, what the AI guessed and how they made each decision, so the instructor hears what every child understood.</p>
             </div>
-            <div class="card" id="model-detail" aria-live="polite"></div>
-            <div class="card versions">
-              <p class="minilabel"><i data-icon="layers"></i>Planet Builder: each round makes a new version</p>
-              <ul id="versions"></ul>
-            </div>
+            <div class="photo"><img src="img/share.jpg" width="1400" height="1400" alt="A girl at the front of the class holds up a tablet showing the planet she designed." loading="lazy" /></div>
+          </div>
+          <div class="projects">
+            <article class="proj" style="--t: var(--mint-t)">
+              <div class="screen">
+                <div class="device">
+                  <div class="top"><b>Planet Zorb</b><small>Passport</small></div>
+                  <div class="stat-row">Gravity <em class="you">half of Earth's</em></div>
+                  <div class="stat-row">Size <em class="you">small, red</em></div>
+                  <div class="stat-row">Moons <em class="ai">AI guessed: 0</em></div>
+                  <div class="stat-row">Astronaut jump <em>1.0 m</em></div>
+                  <div class="prog"><i></i></div>
+                </div>
+              </div>
+              <div class="body"><h3>Planet Passport</h3><p>A planet with its own gravity, size and moons, and a passport that explains every choice.</p><div class="chips"><span>Space</span><span>Gravity</span></div></div>
+            </article>
+            <article class="proj" style="--t: var(--sun-t)">
+              <div class="screen">
+                <div class="device trivia">
+                  <div class="top"><b>Free kick</b><small>Fair test</small></div>
+                  <p class="qq">Which angle goes furthest at 90% power?</p>
+                  <div class="ops"><span><b>30°</b><small>same as 60°</small></span><span class="ok"><b>45°</b><small>furthest</small></span><span><b>60°</b><small>same as 30°</small></span></div>
+                  <div class="clock"><span>Target 18 m</span><span>Clear the wall</span></div>
+                </div>
+              </div>
+              <div class="body"><h3>Free-Kick Challenge</h3><p>A challenge friends can try, built from a fair test of three angles and the evidence behind the best one.</p><div class="chips"><span>Sport</span><span>Angles</span></div></div>
+            </article>
+            <article class="proj" style="--t: var(--accent-t)">
+              <div class="screen">
+                <div class="device">
+                  <div class="top"><b>Town Energy Plan</b><small>Day and night</small></div>
+                  <div class="pet-row"><span class="dot" style="background: var(--sun-t)"><i data-icon="sun"></i></span>Solar <em style="background: var(--mint-t)">DAY</em></div>
+                  <div class="pet-row"><span class="dot" style="background: var(--sky-t)"><i data-icon="wind"></i></span>Wind <em style="background: var(--mint-t)">ALWAYS</em></div>
+                  <div class="pet-row"><span class="dot" style="background: var(--mint-t)"><i data-icon="bolt"></i></span>Battery <em style="background: var(--sun)">NIGHT</em></div>
+                  <div class="pet-row"><span class="dot" style="background: var(--accent-t)"><i data-icon="alert"></i></span>Gas backup <em style="background: var(--accent-t)">&lt; 20%</em></div>
+                </div>
+              </div>
+              <div class="body"><h3>Town Energy Plan</h3><p>A plan that keeps a town's lights on all day and night, with the line graph to prove it.</p><div class="chips"><span>The planet</span><span>Energy</span></div></div>
+            </article>
           </div>
         </div>
       </section>
 
-      <!-- ====================================================================
-           4 · WORLDS
-           ==================================================================== -->
-      <section class="section" id="worlds" data-sec>
+      <!-- ==================================================================
+           LESSONS (dark band)
+           ================================================================== -->
+      <section class="dark" id="lessons">
+        <svg class="wave" viewBox="0 0 1440 60" preserveAspectRatio="none" aria-hidden="true"><path d="M0 60V30C240 0 480 0 720 22s480 30 720 0v38Z" fill="#0f2a3a" /><path d="M0 0h1440v30c-240 30-480 22-720 0S240 0 0 30Z" fill="#f1f2eb" /></svg>
+        <span class="glow" style="left: 62%; top: 4%" aria-hidden="true"></span><span class="glow" style="left: -14%; top: 52%; animation-delay: -9s" aria-hidden="true"></span>
+        <div class="section" style="padding-top: 72px; padding-bottom: 72px; position: relative">
+          <div class="wrap">
+            <div class="sec-head">
+              <p class="label">The learning model</p>
+              <h2>Every lesson has the same six <em>steps</em>.</h2>
+              <p>Children repeat the middle four, each time with a new prompt. Tap any step to see who does what.</p>
+            </div>
+            <div class="timeline" id="steps"></div>
+            <p class="loop-note"><i data-icon="repeat"></i>Children repeat steps 2 to 5 with a new version of the prompt</p>
+          </div>
+        </div>
+        <svg class="wave" viewBox="0 0 1440 60" preserveAspectRatio="none" aria-hidden="true"><path d="M0 0h1440v30c-240 30-480 22-720 0S240 0 0 30Z" fill="#0f2a3a" /><path d="M0 60V30C240 0 480 0 720 22s480 30 720 0v38Z" fill="#fbfbf7" /></svg>
+      </section>
+
+      <!-- ==================================================================
+           TRAINING
+           ================================================================== -->
+      <section class="section" id="training">
         <div class="wrap">
-          <div class="head head--split">
-            <div>
-              <p class="eyebrow" data-a><i data-icon="layers"></i>The builds</p>
-              <h2 class="t-1" data-a style="--d: 80ms">Children learn the same skills in <span class="teal">different builds.</span></h2>
-              <p class="lead" data-a style="--d: 160ms">Each child picks a build that interests them, and the whole class learns the same skill at the same time.</p>
-            </div>
-            <div class="seg" role="tablist" aria-label="Builds" id="worldtabs" data-a style="--d: 200ms"></div>
-          </div>
-          <div class="world" id="world" role="tabpanel" aria-live="polite" data-a style="--d: 240ms"></div>
-        </div>
-      </section>
-
-      <!-- ====================================================================
-           5 · SESSIONS
-           ==================================================================== -->
-      <section class="section" id="sessions" data-sec>
-        <div class="wrap">
-          <div class="head head--split">
-            <div>
-              <p class="eyebrow" data-a><i data-icon="calendar"></i>An example unit of six one-hour sessions</p>
-              <h2 class="t-1" data-a style="--d: 80ms">How six sessions might run.</h2>
-              <p class="lead" data-a style="--d: 160ms">One way the unit could be structured. Each child keeps the build they chose for all six hours, and each session adds one prompting skill.</p>
-            </div>
-            <span class="tag tag--todo" data-a style="--d: 200ms"><i data-icon="pencil"></i>An example structure · to shape together</span>
-          </div>
-          <div class="stabs" id="stabs" role="tablist" aria-label="Sessions" data-a style="--d: 220ms"></div>
-          <div class="sess" data-a style="--d: 280ms">
-            <div class="ladder" id="ladder" aria-hidden="true"></div>
-            <div class="card sess__main" id="sess-main" aria-live="polite"></div>
-            <div class="sess__side">
-              <div class="card"><p class="minilabel">Ingredients in a prompt</p><div class="meter" id="meter"></div><p class="big" id="meter-t"></p></div>
-              <div class="card"><p class="minilabel">AI guesses to spot</p><div class="guesses" id="guesses"></div><p class="big" id="guesses-t"></p></div>
-              <div class="card"><p class="minilabel">Creator level</p><ul class="levels" id="levels"></ul></div>
+          <div class="photo-split">
+            <div class="photo"><img src="img/training.jpg" width="1600" height="1067" alt="Educators around a table try an AI Lab activity together as learners, while a facilitator points at a laptop." loading="lazy" /><span class="tag"><i></i>Five-part training</span></div>
+            <div class="sec-head">
+              <p class="label">Training</p>
+              <h2>We train the people who will <em>teach</em> it.</h2>
+              <p>The training covers how to teach each lesson as well as how to use the software. A non-specialist instructor must be able to run it.</p>
             </div>
           </div>
-          <div class="ingredients" data-a>
-            <span class="minilabel">The six ingredients</span>
-            <span class="ing">What</span><span class="ing">Details</span><span class="ing">Numbers</span><span class="ing">Goal</span><span class="ing">Limits</span><span class="ing">Check</span>
+          <div class="team">
+            <div class="person"><span class="num" style="--t: var(--mint-t)">1</span><h3>Philosophy</h3><p class="role">Why</p><p>Instructors learn why we teach AI this way.</p></div>
+            <div class="person"><span class="num" style="--t: var(--sun-t)">2</span><h3>Experience</h3><p class="role">As learners</p><p>Instructors do the activities as learners.</p></div>
+            <div class="person"><span class="num" style="--t: var(--sky-t)">3</span><h3>Delivery</h3><p class="role">Practice</p><p>Instructors practise teaching each activity.</p></div>
+            <div class="person"><span class="num" style="--t: var(--accent-t)">4</span><h3>Troubleshooting</h3><p class="role">What to do when</p><p>A child gets stuck, the AI gives an unexpected answer or the network is slow.</p></div>
+            <div class="person"><span class="num" style="--t: var(--mint-t)">5</span><h3>Confidence</h3><p class="role">A full lesson</p><p>Instructors run a complete lesson from start to finish.</p></div>
           </div>
-        </div>
-      </section>
-
-      <!-- ====================================================================
-           6 · TRAIN
-           ==================================================================== -->
-      <section class="section" id="train" data-sec>
-        <div class="wrap train">
-          <div>
-            <p class="eyebrow" data-a><i data-icon="board"></i>For instructors</p>
-            <h2 class="t-1" data-a style="--d: 80ms">We train the people who will teach it.</h2>
-            <p class="lead" data-a style="--d: 160ms">The training covers how to teach each lesson as well as how to use the software.</p>
-            <ol class="nlist">
-              <li data-a><span class="n">1</span><div><h3>Philosophy</h3><p>Instructors learn why we teach AI this way.</p></div></li>
-              <li data-a style="--d: 60ms"><span class="n">2</span><div><h3>Experience</h3><p>Instructors do the activities as learners.</p></div></li>
-              <li data-a style="--d: 120ms"><span class="n">3</span><div><h3>Delivery</h3><p>Instructors practise teaching each activity.</p></div></li>
-              <li data-a style="--d: 180ms"><span class="n n--pink">4</span><div><h3>Troubleshooting</h3><p>What to do when:</p><div class="chips"><span>a child gets stuck</span><span>AI gives an unexpected answer</span><span>a build breaks</span><span>the network is slow</span><span>someone finishes early</span><span>someone needs more support</span></div></div></li>
-              <li data-a style="--d: 240ms"><span class="n">5</span><div><h3>Classroom confidence</h3><p>Instructors run a complete lesson from start to finish.</p></div></li>
-            </ol>
-          </div>
-          <div>
-            <div class="card plan" data-a style="--d: 200ms">
-              <h3>Every session plan gives instructors</h3>
+          <div class="incl-wrap">
+            <div class="incl">
+              <p class="label">Every session plan gives instructors</p>
               <ul>
                 <li><i data-icon="check"></i>Session at a glance</li>
                 <li><i data-icon="check"></i>Timing</li>
@@ -252,206 +299,188 @@
                 <li class="todo"><i data-icon="plus"></i>Technical checklist</li>
                 <li class="todo"><i data-icon="plus"></i>Classroom setup</li>
               </ul>
-              <div class="plan__key"><span><i></i>In the session plans today</span><span><i class="d"></i>To design together</span></div>
-              <p class="plan__foot"><i data-icon="shield-check"></i>Training is on the instructor hub, which is for adults only. Children do not need an account.</p>
+              <p class="key">Ticks are in the session plans today. The last two we design together.</p>
             </div>
-            <div class="train__shot" data-a style="--d: 280ms">
-              <div class="browser">
-                <div class="browser__bar"><i></i><i></i><i></i><span class="browser__url"><i data-icon="board"></i>Teach · Session 4</span></div>
-                <div class="browser__shot"><img src="assets/img/teach.jpg" width="1600" height="1000" loading="lazy" alt="The instructor's session plan: the mission in all four worlds and a minute-by-minute running order." /></div>
-              </div>
-              <div class="note"><p class="minilabel">Warm-up · 00:00</p>“I did exactly what you said. What should you have said?”</div>
+            <div class="promise">
+              <span class="ic"><i data-icon="account"></i></span>
+              <h3>Children never need an account.</h3>
+              <p>Training happens on an instructor hub for adults only.</p>
+              <svg class="deco" viewBox="0 0 100 90" aria-hidden="true"><path d="M50 0 100 90H0Z" fill="#0c1b24" /></svg>
             </div>
           </div>
         </div>
       </section>
 
-      <!-- ====================================================================
-           7 · SCHOOLS
-           ==================================================================== -->
-      <section class="section" id="schools" data-sec>
+      <!-- ==================================================================
+           PILOT (research-style cards)
+           ================================================================== -->
+      <section class="section deep" id="pilot">
         <div class="wrap">
-          <div class="head">
-            <p class="eyebrow" data-a><i data-icon="school"></i>Test the real world</p>
-            <h2 class="t-1" data-a style="--d: 80ms">Built for real schools.</h2>
-            <p class="lead" data-a style="--d: 160ms">Deployment is part of the product design, not an afterthought. School firewalls and children's data matter from day one.</p>
+          <div class="sec-head">
+            <p class="label">Pilot</p>
+            <h2>We test it with real <em>children</em>.</h2>
+            <p>We run a small, controlled pilot in real schools, and only expand once it works. These are the questions it answers. We agree the targets with you.</p>
           </div>
-          <div class="grid4">
-            <article class="card" data-a><div class="tile"><i data-icon="offline"></i></div><h3>Safe to use</h3><p>There is no open AI model, no chat and no account to create. It runs offline, on the device.</p></article>
-            <article class="card" data-a style="--d: 60ms"><div class="tile"><i data-icon="shield-check"></i></div><h3>Never bypass school security</h3><p>We help schools set it up on their own devices and networks, and we work with your IT team, never around it.</p></article>
-            <article class="card" data-a style="--d: 120ms"><div class="tile tile--pink"><i data-icon="account"></i></div><h3>No child accounts</h3><p>Children don't sign up for anything, and what they make stays on the device.</p></article>
-            <article class="card" data-a><div class="tile tile--pink"><i data-icon="chat"></i></div><h3>Careful by design</h3><p>Rules for vague requests, “do it for me”, personal information, unkind words and “are you a person?”.</p></article>
-            <article class="card" data-a style="--d: 60ms"><div class="tile tile--orange"><i data-icon="laptop"></i></div><h3>Runs on what you have</h3><p>Current Chrome, Edge, Safari and Firefox. “Simpler 3D” helps older laptops, and every number shows without 3D.</p></article>
-            <article class="card" data-a style="--d: 120ms"><div class="tile tile--orange"><i data-icon="book"></i></div><h3>Real maths and science</h3><p>Forces, angles, sound, energy, percentages and graphs. KS2 links are indicative, and we confirm them with you.</p></article>
+          <div class="banner">
+            <img src="img/pilot.jpg" width="2000" height="1120" alt="Children work in pairs at laptops while a teacher with a clipboard observes from the back of the classroom." loading="lazy" />
+            <span class="tag b1"><i></i>A few classes</span>
+            <span class="tag b2"><i></i>Trained instructors</span>
+            <span class="tag b3"><i></i>Observed, then reviewed together</span>
+          </div>
+          <div class="research">
+            <article class="rq" style="--t: var(--mint-t)"><h3>Children</h3><p>Do children want to keep building and testing? Can they explain what the AI did?</p><div class="src"><span>Observed in class</span><span>The Explain step</span><span>Showcase</span></div></article>
+            <article class="rq" style="--t: var(--sun-t)"><h3>Instructors</h3><p>Can instructors deliver the lessons confidently and within the time?</p><div class="src"><span>Before and after</span><span>Observed timing</span></div></article>
+            <article class="rq" style="--t: var(--accent-t)"><h3>Schools</h3><p>Does it work on real school devices and networks, and meet school expectations?</p><div class="src"><span>Session log</span><span>IT checklist</span></div></article>
+            <article class="rq" style="--t: var(--sky-t)"><h3>Your team</h3><p>Can your team support the lessons over and over again?</p><div class="src"><span>Across pilot sites</span><span>Support load</span></div></article>
           </div>
         </div>
       </section>
 
-      <!-- ====================================================================
-           8 · PARTNERSHIP
-           ==================================================================== -->
-      <section class="section" id="partners" data-sec>
+      <!-- ==================================================================
+           PARTNERS (tiers)
+           ================================================================== -->
+      <section class="section" id="partners">
         <div class="wrap">
-          <div class="head head--center">
-            <p class="eyebrow" data-a><i data-icon="link"></i>Working together</p>
-            <h2 class="t-1" data-a style="--d: 80ms">We want to build it <span class="teal">with you.</span></h2>
+          <div class="sec-head">
+            <p class="label">Working together</p>
+            <h2>We want to build it <em>with you</em>.</h2>
+            <p>Your approach to teaching will shape the product, and we will do the building. After launch we keep going round the same eight stages with you.</p>
           </div>
-          <div class="with" id="with" data-a style="--d: 160ms">
-            <svg class="with__wires" id="wires" aria-hidden="true"></svg>
-            <div class="with__col with__col--you">
-              <h3>You bring</h3>
-              <ul>
-                <li class="pill">Pedagogy</li>
-                <li class="pill">Classroom expertise</li>
-                <li class="pill">Instructor experience</li>
-                <li class="pill">School relationships</li>
-                <li class="pill">Curriculum knowledge</li>
-                <li class="pill">Safeguarding knowledge</li>
-                <li class="pill">What children engage with</li>
+          <div class="bring">
+            <div class="incl"><h3>You bring</h3><ul><li>Pedagogy</li><li>Classroom expertise</li><li>Instructor experience</li><li>School relationships</li><li>Curriculum knowledge</li><li>Safeguarding knowledge</li><li>What children engage with</li></ul></div>
+            <div class="incl"><h3>We bring</h3><ul><li>AI learning design</li><li>Interactive product design</li><li>Game design</li><li>Rapid prototyping</li><li>Platform development</li><li>Visualisation</li><li>Iteration</li></ul></div>
+          </div>
+          <div class="tiers">
+            <div class="tier first" style="--t: var(--sun)"><p class="who">Stage 1</p><span class="off">20-minute calls</span><p class="amt">Listen</p><p>We listen to the people who teach, before we decide anything.</p></div>
+            <div class="tier" style="--t: var(--mint-t)"><p class="who">Stage 2</p><span class="off">One workshop</span><p class="amt">Co-design</p><p>We turn their ideas into activities.</p></div>
+            <div class="tier" style="--t: var(--sky-t)"><p class="who">Stage 3</p><span class="off">A fixed period</span><p class="amt">Build</p><p>We build those activities into a platform.</p></div>
+            <div class="tier" style="--t: var(--accent-t)"><p class="who">Stage 4</p><span class="off">Five parts</span><p class="amt">Train</p><p>We train the people who teach them.</p></div>
+            <div class="tier" style="--t: var(--mint-t)"><p class="who">Stage 5</p><span class="off">A few classes</span><p class="amt">Pilot</p><p>We test the lessons with real children.</p></div>
+            <div class="tier" style="--t: var(--sun-t)"><p class="who">Stage 6</p><span class="off">Every session</span><p class="amt">Learn</p><p>We learn from every class that uses it.</p></div>
+            <div class="tier" style="--t: var(--sky-t)"><p class="who">Stage 7</p><span class="off">Every month</span><p class="amt">Improve</p><p>We fix what does not work and keep improving.</p></div>
+            <div class="tier" style="--t: var(--accent-t)"><p class="who">Stage 8</p><span class="off">Evidence first</span><p class="amt">Scale</p><p>We scale it up, then start listening again.</p></div>
+          </div>
+          <div class="incl-wrap">
+            <div class="incl">
+              <p class="label">We decide together at five points</p>
+              <ul style="grid-template-columns: 1fr">
+                <li><i data-icon="gate"></i><span><b>After the interviews.</b> Do we understand the educational direction?</span></li>
+                <li><i data-icon="gate"></i><span><b>After the workshop.</b> Do we agree on the learning model and the priority changes?</span></li>
+                <li><i data-icon="gate"></i><span><b>After the build sprint.</b> Is the product ready for a controlled pilot?</span></li>
+                <li><i data-icon="gate"></i><span><b>After the pilot.</b> What must change before broader deployment?</span></li>
+                <li><i data-icon="gate"></i><span><b>After initial deployment.</b> Is the operating model ready to scale?</span></li>
               </ul>
             </div>
-            <div class="with__hub">
-              <span class="bit bit--inline" data-bit="pink:happy:92:0:still"></span>
-              <b>A practical AI learning product</b>
-              <small>for children aged 10 to 11</small>
+            <div class="promise">
+              <span class="ic"><i data-icon="gate"></i></span>
+              <h3>Carry on, change the plan or stop.</h3>
+              <p>At each of these gates, we agree the next step together.</p>
+              <a class="btn btn-teal" href="#next" style="background: var(--navy); box-shadow: none">Start with a call <span class="arr"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6" /></svg></span></a>
+              <svg class="deco" viewBox="0 0 100 90" aria-hidden="true"><path d="M50 0 100 90H0Z" fill="#0c1b24" /></svg>
             </div>
-            <div class="with__col with__col--we">
-              <h3>We bring</h3>
-              <ul>
-                <li class="pill pill--teal">AI learning design</li>
-                <li class="pill pill--teal">Interactive product design</li>
-                <li class="pill pill--teal">Game design</li>
-                <li class="pill pill--teal">Rapid prototyping</li>
-                <li class="pill pill--teal">Platform development</li>
-                <li class="pill pill--teal">Visualisation</li>
-                <li class="pill pill--teal">Iteration</li>
-              </ul>
-            </div>
-          </div>
-          <p class="with__foot" data-a><i data-icon="heart"></i>Your approach to teaching will shape the product, and we will do the building.</p>
-
-          <div class="journey">
-            <div class="head">
-              <p class="eyebrow" data-a><i data-icon="route"></i>The partnership</p>
-              <h2 class="t-2" data-a style="--d: 80ms">How we keep working together.</h2>
-              <p class="lead" data-a style="--d: 140ms">After launch we keep going round the same eight stages with you.</p>
-            </div>
-            <ol class="journey__nav">
-              <li class="jstage" data-a><span class="minilabel">Stage 1</span><h3>Listen</h3><p>We listen to the people who teach, in 20-minute calls, before we decide anything.</p></li>
-              <li class="jstage" data-a style="--d: 40ms"><span class="minilabel">Stage 2</span><h3>Co-design</h3><p>We turn their ideas into activities, in one in-person workshop.</p></li>
-              <li class="jstage" data-a style="--d: 80ms"><span class="minilabel">Stage 3</span><h3>Build</h3><p>We build those activities into a platform, over a fixed period.</p></li>
-              <li class="jstage" data-a style="--d: 120ms"><span class="minilabel">Stage 4</span><h3>Train</h3><p>We train the people who teach them.</p></li>
-              <li class="jstage" data-a style="--d: 160ms"><span class="minilabel">Stage 5</span><h3>Pilot</h3><p>We test the lessons with real children, and only expand once it works.</p></li>
-              <li class="jstage" data-a style="--d: 200ms"><span class="minilabel">Stage 6</span><h3>Learn</h3><p>We learn from every class that uses it.</p></li>
-              <li class="jstage" data-a style="--d: 240ms"><span class="minilabel">Stage 7</span><h3>Improve</h3><p>We fix what does not work and release small changes every month.</p></li>
-              <li class="jstage" data-a style="--d: 280ms"><span class="minilabel">Stage 8</span><h3>Scale</h3><p>We scale it up, then start listening again.</p></li>
-            </ol>
-            <div class="head" style="margin: clamp(56px, 6vw, 88px) 0 28px">
-              <p class="eyebrow" data-a><i data-icon="gate"></i>How we make decisions</p>
-              <h2 class="t-2" data-a style="--d: 80ms">We decide together at five points.</h2>
-            </div>
-            <div class="gates">
-              <div class="gate" data-a><span class="minilabel"><i data-icon="gate"></i>Gate 1</span><p>Do we understand the educational direction?</p><small>After the interviews</small></div>
-              <div class="gate" data-a style="--d: 50ms"><span class="minilabel"><i data-icon="gate"></i>Gate 2</span><p>Do we agree on the learning model and the priority changes?</p><small>After the workshop</small></div>
-              <div class="gate" data-a style="--d: 100ms"><span class="minilabel"><i data-icon="gate"></i>Gate 3</span><p>Is the product ready for a controlled pilot?</p><small>After the build sprint</small></div>
-              <div class="gate" data-a style="--d: 150ms"><span class="minilabel"><i data-icon="gate"></i>Gate 4</span><p>What must change before broader deployment?</p><small>After the pilot</small></div>
-              <div class="gate" data-a style="--d: 200ms"><span class="minilabel"><i data-icon="gate"></i>Gate 5</span><p>Is the operating model ready to scale?</p><small>After initial deployment</small></div>
-            </div>
-            <p class="decide" data-a>At each of these gates, we agree whether to <span style="background: var(--green)">Carry on</span><span style="background: var(--yellow)">Change the plan</span><span style="background: var(--pink)">Stop</span></p>
           </div>
         </div>
       </section>
 
-      <!-- ====================================================================
-           9 · WHAT YOU GET
-           ==================================================================== -->
-      <section class="section" id="get" data-sec>
+      <!-- ==================================================================
+           WHAT YOU GET
+           ================================================================== -->
+      <section class="section deep" id="get">
         <div class="wrap">
-          <div class="head">
-            <p class="eyebrow" data-a><i data-icon="star"></i>The partnership</p>
-            <h2 class="t-1" data-a style="--d: 80ms">What you get.</h2>
-            <p class="lead" data-a style="--d: 160ms">You get a learning product that we keep improving with you.</p>
+          <div class="sec-head">
+            <p class="label">The partnership</p>
+            <h2>What you <em>get</em>.</h2>
+            <p>More than software: the course, the platform, the training and the support to run it well.</p>
           </div>
-          <div class="grid4 grid4--get">
-            <article class="card" data-a><div class="tile"><i data-icon="book"></i></div><h3>Curriculum</h3><p>We provide a structured AI course for children aged 10 to 11.</p></article>
-            <article class="card" data-a style="--d: 50ms"><div class="tile"><i data-icon="laptop"></i></div><h3>Platform</h3><p>You get one place to run and manage the lessons.</p></article>
-            <article class="card" data-a style="--d: 100ms"><div class="tile tile--pink"><i data-icon="gamepad"></i></div><h3>Builds and activities</h3><p>Children make maths and science projects of their own.</p></article>
-            <article class="card" data-a style="--d: 150ms"><div class="tile tile--orange"><i data-icon="list"></i></div><h3>Instructor support</h3><p>Instructors get ready-to-run lessons and teaching prompts.</p></article>
-            <article class="card" data-a><div class="tile"><i data-icon="board"></i></div><h3>Training</h3><p>We train instructors to teach the lessons with confidence.</p></article>
-            <article class="card" data-a style="--d: 50ms"><div class="tile"><i data-icon="shield-check"></i></div><h3>Deployment support</h3><p>We help schools set it up on their own devices and networks.</p></article>
-            <article class="card" data-a style="--d: 100ms"><div class="tile tile--pink"><i data-icon="repeat"></i></div><h3>Continuous improvement</h3><p>We release improvements every month.</p></article>
-            <article class="card" data-a style="--d: 150ms"><div class="tile tile--orange"><i data-icon="globe"></i></div><h3>Scale</h3><p>The model can grow across your wider network.</p></article>
+          <div class="services services--4">
+            <div class="svc feature" data-n="★"><span class="ic"><i data-icon="sparkle"></i></span><div><b>A learning product we keep <em>improving</em> with you.</b><span>Every class sends something back, and every month the most useful feedback becomes a release.</span></div><img src="img/robot-planet.png" width="400" height="400" alt="" loading="lazy" /></div>
+            <div class="svc" data-n="01"><span class="ic" style="--t: var(--mint-t)"><i data-icon="book"></i></span><div><b>Curriculum</b><span>A structured AI course for children aged 10 to 11.</span></div></div>
+            <div class="svc" data-n="02"><span class="ic" style="--t: var(--sky-t)"><i data-icon="laptop"></i></span><div><b>Platform</b><span>One place to run and manage the lessons.</span></div></div>
+            <div class="svc" data-n="03"><span class="ic" style="--t: var(--accent-t)"><i data-icon="gamepad"></i></span><div><b>Builds and activities</b><span>Maths and science projects children make their own.</span></div></div>
+            <div class="svc" data-n="04"><span class="ic" style="--t: var(--sun-t)"><i data-icon="list"></i></span><div><b>Instructor support</b><span>Ready-to-run lessons and teaching prompts.</span></div></div>
+            <div class="svc" data-n="05"><span class="ic" style="--t: var(--mint-t)"><i data-icon="board"></i></span><div><b>Training</b><span>Instructors who teach the lessons with confidence.</span></div></div>
+            <div class="svc" data-n="06"><span class="ic" style="--t: var(--sky-t)"><i data-icon="shield-check"></i></span><div><b>Deployment support</b><span>Help setting it up on school devices and networks.</span></div></div>
+            <div class="svc" data-n="07"><span class="ic" style="--t: var(--accent-t)"><i data-icon="repeat"></i></span><div><b>Continuous improvement</b><span>Improvements released every month.</span></div></div>
+            <div class="svc" data-n="08"><span class="ic" style="--t: var(--sun-t)"><i data-icon="globe"></i></span><div><b>Scale</b><span>A model that can grow across your wider network.</span></div></div>
           </div>
         </div>
       </section>
 
-      <!-- ====================================================================
-           10 · FAQ
-           ==================================================================== -->
-      <section class="section" id="faq" data-sec>
+      <!-- ==================================================================
+           FAQ
+           ================================================================== -->
+      <section class="section" id="faq">
         <div class="wrap">
-          <div class="head head--center">
-            <p class="eyebrow" data-a><i data-icon="help"></i>Questions</p>
-            <h2 class="t-1" data-a style="--d: 80ms">Questions schools ask.</h2>
+          <div class="sec-head">
+            <p class="label">FAQ</p>
+            <h2>Questions schools <em>ask</em>.</h2>
           </div>
-          <div class="faq">
-            <details data-a><summary>Do our instructors need to know about AI?<span class="plus"><i data-icon="plus"></i></span></summary><p>No. A non-specialist instructor must be able to run it, and that's a design rule. Every session has a minute-by-minute plan with the words to say, and the training ends with each instructor running a complete lesson.</p></details>
-            <details data-a><summary>Will it work behind our school firewall?<span class="plus"><i data-icon="plus"></i></span></summary><p>Yes. There is no open AI model and no chat. The example AI runs offline on the device, so nothing needs to reach an outside service, and we help schools set it up on their own devices and networks.</p></details>
-            <details data-a><summary>What happens to children's data?<span class="plus"><i data-icon="plus"></i></span></summary><p>There is no account to create, and what children make stays on the device. A shared build travels inside its link, so no server is needed.</p></details>
-            <details data-a><summary>Is this a coding course?<span class="plus"><i data-icon="plus"></i></span></summary><p>No. It's maths and science, learned by building with AI. Children practise saying exactly what they mean, predicting, testing fairly and deciding from evidence.</p></details>
-            <details data-a><summary>How do we schedule it?<span class="plus"><i data-icon="plus"></i></span></summary><p>Run it as a half-term block or as six weekly one-hour sessions. Each session stands alone in the timetable, and the build carries on to the next one.</p></details>
-            <details data-a><summary>How much does it cost?<span class="plus"><i data-icon="plus"></i></span></summary><p>We agree pricing and terms with each partner once we understand what you need. Book a call and we'll talk it through.</p></details>
+          <div class="faq-grid">
+            <details open><summary>Do instructors need to know about AI?</summary><p>No. A non-specialist instructor must be able to run it. Every session plan includes timing, instructor prompts and common problems, and training ends with each instructor running a complete lesson.</p></details>
+            <details><summary>Will it work behind our firewall?</summary><p>Yes. There is no open AI model and no chat. The example AI runs offline on the device, so nothing needs to reach an outside service.</p></details>
+            <details><summary>What happens to children's data?</summary><p>There is no account to create, and what children make stays on the device. A shared build travels inside its link, so no server is needed.</p></details>
+            <details><summary>Is this a coding course?</summary><p>No. It's maths and science, learned by building with AI. Children practise saying exactly what they mean, predicting, testing fairly and deciding from evidence.</p></details>
+            <details><summary>How do we schedule it?</summary><p>Run it as a half-term block or as six weekly one-hour sessions, for around 15 children. Each child keeps the build they chose for all six hours.</p></details>
+            <details><summary>What equipment do we need?</summary><p>Laptops with a current Chrome, Edge, Safari or Firefox. A simpler 3D mode helps older machines, and every number still shows without 3D.</p></details>
+            <details><summary>Is the unit finished?</summary><p>No. The structure is an example to shape together. We start by listening, then co-design and pilot it with you before anything scales.</p></details>
+            <details><summary>How much does it cost?</summary><p>We agree pricing and terms with each partner once we understand what you need. Book a call and we'll talk it through.</p></details>
           </div>
         </div>
       </section>
 
-      <!-- ====================================================================
-           11 · NEXT STEPS
-           ==================================================================== -->
-      <section class="section next" id="next" data-sec>
-        <svg class="ribbon" viewBox="0 0 700 900" preserveAspectRatio="none" aria-hidden="true">
-          <path d="M760 -20 C 560 120, 360 220, 420 420 S 700 700, 520 960" />
-          <path class="ribbon__dash" d="M760 -20 C 560 120, 360 220, 420 420 S 700 700, 520 960" />
-        </svg>
-        <div class="wrap next__grid">
-          <div>
-            <p class="eyebrow" data-a><i data-icon="sparkle"></i>Next steps</p>
-            <h2 class="t-1" data-a style="--d: 80ms">Let's build the first version <span class="teal">together.</span></h2>
-            <p class="lead" data-a style="--d: 160ms">It starts with 20-minute conversations with the people who know your organisation best.</p>
-            <ol class="nsteps">
-              <li data-a><b>1</b><div><h3>Agree who we speak to</h3><p>You choose from curriculum, delivery, schools and senior leaders.</p></div></li>
-              <li data-a style="--d: 80ms"><b>2</b><div><h3>Book the 20-minute calls</h3><p>We share the questions in advance.</p></div></li>
-              <li data-a style="--d: 160ms"><b>3</b><div><h3>Set the workshop date</h3><p>It lasts 90 to 120 minutes, in person, after the interviews.</p></div></li>
-            </ol>
-            <p class="next__gate" data-a><i data-icon="gate"></i>Then, at Gate 1, we decide together whether we understand the educational direction.</p>
-            <div class="btns" data-a>
-              <!-- TODO: confirm the contact address -->
-              <a class="btn" href="mailto:hello@deltatraining.co?subject=AI%20Lab%20%C2%B7%2020-minute%20call">Book a 20-minute call <span class="btn__arrow"><i data-icon="arrow-up-right"></i></span></a>
-              <a class="btn btn--ghost" href="#model">Back to the loop <span class="btn__arrow"><i data-icon="restart"></i></span></a>
-            </div>
+      <!-- ==================================================================
+           WHERE IT RUNS
+           ================================================================== -->
+      <section class="section deep" id="schools">
+        <div class="wrap">
+          <div class="sec-head">
+            <p class="label">Where it runs</p>
+            <h2>The AI Lab, in your <em>classroom</em>.</h2>
+            <p>The same builds, the same safety setup and a trained instructor with every group.</p>
           </div>
-          <div class="next__art" aria-hidden="true">
-            <span class="bit bit--float b1" data-bit="pink:love"></span>
-            <span class="bit bit--float bit--slow b2" data-bit="teal:grin"></span>
+          <div class="ip-grid" style="grid-template-columns: repeat(3, 1fr)">
+            <div class="ip"><span class="ic" style="background: var(--mint-t)"><i data-icon="school"></i></span><h3>Schools</h3><p>Six one-hour lessons in the timetable, or a half-term block for a class.</p></div>
+            <div class="ip"><span class="ic" style="background: var(--sun-t)"><i data-icon="users"></i></span><h3>After-school clubs</h3><p>Weekly clubs where children keep the same build across six sessions.</p></div>
+            <div class="ip"><span class="ic" style="background: var(--accent-t)"><i data-icon="network"></i></span><h3>Partner networks</h3><p>Education partners who deliver across many schools and clubs.</p></div>
+          </div>
+          <div class="ip-foot">
+            <p><b>Deployment.</b> We help schools set it up on their own devices and networks, and we work with your IT team, never around it.</p>
+            <a class="btn btn-teal" href="#next">Book a 20-minute call <span class="arr"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6" /></svg></span></a>
           </div>
         </div>
-        <div class="ticker" data-ticker="Listen|Co-design|Build|Train|Pilot|Learn|Improve|Scale"></div>
+      </section>
+
+      <!-- ==================================================================
+           NEXT STEPS
+           ================================================================== -->
+      <section class="cta" id="next">
+        <svg class="tri" style="left: 8%; top: 18%; width: 26px; rotate: -12deg" viewBox="0 0 20 18" aria-hidden="true"><path d="M10 0 20 18H0Z" fill="#ffc53d" /></svg>
+        <svg class="tri" style="right: 10%; bottom: 22%; width: 20px; rotate: 16deg" viewBox="0 0 20 18" aria-hidden="true"><path d="M10 0 20 18H0Z" fill="#0e9c8e" /></svg>
+        <div class="wrap">
+          <p class="label">Next steps</p>
+          <h2>Let's build the first version <em>together</em>.</h2>
+          <p class="sub">It starts with 20-minute conversations with the people who know your organisation best.</p>
+          <ol class="steps3">
+            <li><b>1</b><h3>Agree who we speak to</h3><p>You choose from curriculum, delivery, schools and senior leaders.</p></li>
+            <li><b>2</b><h3>Book the 20-minute calls</h3><p>We share the questions in advance.</p></li>
+            <li><b>3</b><h3>Set the workshop date</h3><p>It lasts 90 to 120 minutes, in person, after the interviews.</p></li>
+          </ol>
+          <!-- TODO: confirm the contact address -->
+          <a class="btn btn-teal" href="mailto:hello@deltatraining.co?subject=AI%20Lab%20%C2%B7%2020-minute%20call">Book a 20-minute call <span class="arr"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6" /></svg></span></a>
+          <p class="gate">Then, at Gate 1, we decide together whether we understand the educational direction.</p>
+        </div>
       </section>
     </main>
 
     <footer>
       <div class="wrap">
         <a class="logo" href="#top"><img src="assets/logo.png" width="1520" height="260" alt="Delta Learning" /></a>
-        <nav aria-label="Footer">
-          <a href="#example">Example</a><a href="#model">Learning model</a><a href="#worlds">Builds</a><a href="#sessions">Sessions</a><a href="#schools">Schools</a><a href="#partners">Partners</a><a href="#get">What you get</a><a href="#faq">Questions</a>
-        </nav>
-        <p>© <span id="year">2026</span> Delta Learning</p>
+        <nav aria-label="Footer"><a href="#builds">Builds</a><a href="#safety">Safety</a><a href="#example">Example</a><a href="#lessons">Lessons</a><a href="#partners">Partners</a><a href="#faq">FAQ</a></nav>
+        <span>© <span id="year">2026</span> Delta Learning</span>
       </div>
     </footer>
 
-    <div class="progress" id="progress" aria-hidden="true"></div>
-
     <script src="js/ui.js"></script>
-    <script src="js/site.js"></script>
+    <script src="js/kids.js"></script>
   </body>
 </html>

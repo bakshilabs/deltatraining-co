@@ -51,7 +51,7 @@
       thumbs.forEach(function (t) { t.setAttribute("aria-pressed", String(t === b)); });
       shot.style.opacity = "0";
       setTimeout(function () {
-        shot.src = "../assets/img/" + b.getAttribute("data-shot") + ".jpg";
+        shot.src = "assets/img/" + b.getAttribute("data-shot") + ".jpg";
         shot.alt = b.getAttribute("data-alt");
         shot.onload = function () { shot.style.opacity = "1"; };
       }, 150);

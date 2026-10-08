@@ -265,8 +265,8 @@ nav.top .btn {
   overflow: hidden;
 }
 .hero-photo {
-  --hero: url(img/hero-1600.jpg);
-  --hero: image-set(url(img/hero-1600.jpg) 1x, url(img/hero-2880.jpg) 2x);
+  --hero: url(../img/hero-1600.jpg);
+  --hero: image-set(url(../img/hero-1600.jpg) 1x, url(../img/hero-2880.jpg) 2x);
   position: relative;
   height: clamp(600px, 50vw, 760px);
   display: flex;
@@ -1602,7 +1602,7 @@ nav.top .btn {
 
 /* ---- Closing CTA and footer ------------------------------------------------------ */
 .cta {
-  --demo: url(img/cta.jpg);
+  --demo: url(../img/cta.jpg);
   background: linear-gradient(135deg, rgba(11, 127, 116, 0.84), rgba(15, 42, 58, 0.93) 70%), var(--demo) center 40% / cover;
   color: #fff;
   text-align: center;
